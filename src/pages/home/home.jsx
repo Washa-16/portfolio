@@ -39,7 +39,7 @@ const Home = () => {
         </div>
 
         <div className="flex justify-center py-20">
-          <img src={darkMode ? white_circlePotrait : circlePotrait} />
+          <img src={darkMode ? white_circlePotrait : circlePotrait} alt=""/>
         </div>
       </section>
 

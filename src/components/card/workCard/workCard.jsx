@@ -1,4 +1,3 @@
-import { linkedinIcon } from "../../constants/images/ImageConstants";
 
 const WorkCard = ({
   title,
@@ -13,6 +12,7 @@ const WorkCard = ({
       <div className="max-w-[500px]">
         <img
           src={leftImage}
+          alt=""
           className="mb-6 h-20 w-20 rounded-2xl object-contain"
         />
         <h3 className="text-2xl font-semibold leading-snug mb-5">{title}</h3>
@@ -27,7 +27,7 @@ const WorkCard = ({
       {/* <div className="h-60 bg-gray-300 dark:bg-gray-700 rounded-xl"> */}
       {/* </div> */}
       <div className="flex justify-center md:justify-end items-end h-full">
-        <img src={rightImage} className={`object-contain ${imageClass}`} />
+        <img src={rightImage} className={`object-contain ${imageClass}`} alt=""/>
       </div>
     </div>
   );

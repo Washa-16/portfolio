@@ -9,7 +9,6 @@ import {
 import {
   githubIcon,
   linkedinIcon,
-  moonIcon,
   sunIcon,
   white_githubIcon,
   white_linkedinIcon,
@@ -59,16 +58,19 @@ const MainLayout = () => {
               <img
                 src={darkMode ? white_linkedinIcon : linkedinIcon}
                 className="px-3 py-1 cursor-pointer"
+                alt=""
                 onClick={() => window.open(linkedIn_Link, "_blank")}
               />
               <img
                 src={darkMode ? white_githubIcon : githubIcon}
                 className="px-3 py-1 cursor-pointer"
+                alt=""
                 onClick={() => window.open(github_Link, "_blank")}
               />
               <img
                 src={darkMode ? white_sunIcon : sunIcon}
                 onClick={() => setDarkMode(!darkMode)}
+                alt=""
                 className="px-3 py-1 cursor-pointer"
               />
             </div>

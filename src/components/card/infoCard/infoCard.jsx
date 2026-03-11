@@ -14,6 +14,7 @@ const InfoCard = ({ title, subtitle, image, imageClass, path }) => {
       <div className="flex-1 flex items-end justify-center">
         <img
           src={image}
+          alt=""
           className={`object-contain max-w-none ${imageClass}`}
         />
       </div>

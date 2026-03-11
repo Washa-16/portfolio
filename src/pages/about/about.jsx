@@ -40,7 +40,7 @@ const About = () => {
 
             <img
               src={footerText.signature}
-              //alt="signature"
+              alt=""
               className="w-[180px] object-contain"
             />
           </div>
