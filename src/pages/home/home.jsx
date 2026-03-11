@@ -1,4 +1,5 @@
 import { useOutletContext } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   circlePotrait,
   white_circlePotrait,
@@ -9,9 +10,12 @@ import {
   KNOW_ME,
   SELECTED_WORK,
 } from "../../components/constants/data/userData";
+import resume from "../../assets/resume/language.pdf";
+import { CONTACT_PATH } from "../../components/constants";
 
 const Home = () => {
   const { darkMode } = useOutletContext();
+  const navigate = useNavigate();
   console.log(darkMode, "darkmode");
 
   return (
@@ -28,18 +32,24 @@ const Home = () => {
           </p>
 
           <div className="flex gap-4">
-            <button className="bg-[#181818] text-white px-6 py-3 rounded-lg">
+            <button
+              className="bg-[#181818] text-white px-6 py-3 rounded-lg"
+              onClick={() => window.open(resume, "_blank")}
+            >
               See my resume
             </button>
 
-            <button className="bg-gray-200 dark:bg-[#181818] px-6 py-3 rounded-lg">
+            <button
+              className="bg-gray-200 dark:bg-[#181818] px-6 py-3 rounded-lg"
+              onClick={() => navigate(CONTACT_PATH)}
+            >
               Get in touch
             </button>
           </div>
         </div>
 
         <div className="flex justify-center py-20">
-          <img src={darkMode ? white_circlePotrait : circlePotrait} alt=""/>
+          <img src={darkMode ? white_circlePotrait : circlePotrait} alt="" />
         </div>
       </section>
 
@@ -68,7 +78,10 @@ const Home = () => {
           </p>
         </div>
 
-        <button className="bg-black text-white px-6 py-3 rounded-lg dark:bg-white dark:text-black">
+        <button
+          className="bg-black text-white px-6 py-3 rounded-lg dark:bg-white dark:text-black"
+          onClick={() => navigate(CONTACT_PATH)}
+        >
           Get in touch
         </button>
       </section>
