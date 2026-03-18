@@ -33,14 +33,18 @@ const Home = () => {
 
           <div className="flex gap-4">
             <button
-              className="bg-[#181818] text-white px-6 py-3 rounded-lg"
+              className="bg-[#181818] text-white px-6 py-3 rounded-lg hover:bg-gray-300 dark:hover:bg-[#2a2a2a]
+                          hover:-translate-y-1 hover:shadow-lg
+                          transition-all duration-300"
               onClick={() => window.open(resume, "_blank")}
             >
               See my resume
             </button>
 
             <button
-              className="bg-gray-200 dark:bg-[#181818] px-6 py-3 rounded-lg"
+              className="bg-gray-200 dark:bg-[#181818] px-6 py-3 rounded-lg hover:bg-gray-300 dark:hover:bg-[#2a2a2a]
+                          hover:-translate-y-1 hover:shadow-lg
+                          transition-all duration-300"
               onClick={() => navigate(CONTACT_PATH)}
             >
               Get in touch
@@ -79,7 +83,9 @@ const Home = () => {
         </div>
 
         <button
-          className="bg-black text-white px-6 py-3 rounded-lg dark:bg-white dark:text-black"
+          className="bg-black text-white px-6 py-3 rounded-lg dark:bg-white dark:text-black hover:bg-gray-500 dark:hover:bg-gray-400
+                      hover:-translate-y-1 hover:shadow-lg
+                      transition-all duration-300"
           onClick={() => navigate(CONTACT_PATH)}
         >
           Get in touch

@@ -35,8 +35,8 @@ const MainLayout = () => {
         ></div>
 
         <div className="max-w-7xl mx-auto px-6 flex-grow w-full">
-          <header className="flex justify-between items-center py-6">
-            <h1 className="text-xl font-bold">[e]</h1>
+          <header className="flex justify-between items-center py-6 hover:scale-[1.02] transition border rounded-lg border-transparent hover:border-neutral-700 p-10 mt-5">
+            <h1 className="text-xl font-bold">[W]</h1>
             <nav className="hidden md:flex gap-8 text-sm">
               <NavLink to={ABOUT_PATH} className={navClass}>
                 About

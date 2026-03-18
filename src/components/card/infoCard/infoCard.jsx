@@ -5,7 +5,7 @@ const InfoCard = ({ title, subtitle, image, imageClass, path }) => {
   return (
     <div
       onClick={() => navigate(path)}
-      className="bg-gray-100 dark:bg-neutral-900 p-8 rounded-2xl min-h-[320px] cursor-pointer flex flex-col  items-center overflow-hidden "
+      className="bg-gray-100 dark:bg-neutral-900 p-8 rounded-2xl min-h-[320px] flex flex-col  items-center overflow-hidden hover:scale-[1.02] transition cursor-pointer border border-transparent hover:border-neutral-700"
     >
       <div>
         <h4 className="font-semibold text-2xl mb-2">{title}</h4>
